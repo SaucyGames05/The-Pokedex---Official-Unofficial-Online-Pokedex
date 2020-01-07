@@ -132,15 +132,36 @@ body {
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
+  .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  .button:hover span {
+  padding-right: 25px;
+  }
+  .button:hover span:after {
+  opacity: 1;
+  right: 0;
+  {
   .donateccdc {border-radius: 8px;}
 </style>
 </head>
 <body>
 <form action="https://www.paypal.com/pools/c/8lqJfd1yki/chip_in/pledge" method="get" target="_blank">
-     <button class="buttona donatepp">Donate		<i class="fab fa-paypal"></i></button>
+     <button class="buttona donatepp">Donate		<i class="fab fa-paypal"></i> </button>
 </form>
 <form action="https://www.paypal.com/pools/c/8lqJfd1yki/chip_in/pledge" method="get" target="_blank">
-     <button class="buttonb donateccdc">Donate		<i class="fas fa-credit-card"></i></button>
+     <button class="buttonb donateccdc">Donate		<i class="fas fa-credit-card"> </i></button>
 </form>
 <div class="locator">Liscenced under Creative Commons Zero     <i class="fab fa-creative-commons-zero"></i></div>
   <div class="navbar">
